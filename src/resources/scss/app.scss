@@ -1,0 +1,17 @@
+@import "variables";
+
+body {
+  font-size: 14px;
+  p {
+    margin-bottom: 0;
+  }
+  a {
+    display: block;
+  }
+}
+h1 {
+  color: $gray-color;
+}
+h2 {
+  color: green;
+}

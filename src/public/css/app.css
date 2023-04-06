@@ -1,0 +1,12 @@
+body {
+  font-size: 14px; }
+  body p {
+    margin-bottom: 0; }
+  body a {
+    display: block; }
+
+h1 {
+  color: red; }
+
+h2 {
+  color: green; }
