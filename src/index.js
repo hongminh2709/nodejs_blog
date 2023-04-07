@@ -6,6 +6,17 @@ const hbs = require("express-handlebars");
 const port = 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
+
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+app.use(express.json());
+
+// ngoai ra con nhung thu vien khac de gui du lieu len server
+// XMLHttpRequest, fetch, axios
+
 // HTTP logger
 // app.use(morgan("combined"));
 
@@ -27,8 +38,8 @@ app.get("/search", (req, res) => {
   res.render("search");
 });
 app.post("/search", (req, res) => {
-  console.log(123, req.query, req.query.q);
-  res.render("search");
+  console.log(123, req.body);
+  res.send("");
 });
 
 app.listen(port, () => {

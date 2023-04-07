@@ -1,5 +1,5 @@
 <div class="search-form mt-4">
-  <form method="GET" action="news">
+  <form method="POST" action="">
     <div class="mb-3">
       <label for="searchInput" class="form-label">Full name</label>
       <input
@@ -29,6 +29,14 @@
         placeholder="input right here"
         name="q"
       />
+    </div>
+    <div class="mb-3">
+      <label for="gender-input" class="form-label">Gender</label>
+      <select class="form-control" name="gender" id="gender-input">
+        <option value="">__Chose Gender__</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
     </div>
     <button type="submit" class="btn btn-primary">Search</button>
   </form>
